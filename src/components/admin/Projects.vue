@@ -28,6 +28,12 @@ export default {
     return {
       msg: 'Welcome to Crypto Info'
     }
+  },
+
+  created() {
+    let promise = this.$http.get('http://localhost:8441/v1/games');
+    promise.then(res => console.log(res.json()));
+
   }
 }
 </script>

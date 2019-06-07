@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <b-row class="justify-content-md-center">
-      <b-col cols="6" class="back rounded">
+      <b-col cols="6" class="rounded">
         <b-row>
           <b-col>
             <b-form-group
@@ -28,6 +28,11 @@
               :state="state">
               <b-form-input id="input1" :state="state" v-model.trim="name"></b-form-input>
             </b-form-group>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <b-button variant="primary">Button</b-button>
           </b-col>
         </b-row>
       </b-col>
